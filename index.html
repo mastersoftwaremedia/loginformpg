@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8" />
+<title>Create a designed login page with CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="author" content="Phanna Ly">
+<meta name="description" content="Showing how to design to create a login page with css">
+
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
+<style>
+ html, body {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ height: 100%;
+}
+
+body {
+ margin: auto;
+ background: #fff url(bg7.jpg) no-repeat center center;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+.container {
+ width: 500px;
+ height: 400px; 
+ background-color: rgba( 52, 73, 94, 0.7);
+ margin: 0 auto;
+ border: none;
+ border-radius: 4px;
+ text-align: center;
+ margin-top: 150px;
+}
+
+.container img {
+ margin-top: -60px;
+ width: 120px;
+ height: 120px;
+ margin-bottom: 30px; 
+}
+
+input[type="text"],input[type="password"]{
+ width: 300px;
+ height: 45px;
+ border: none;
+ background-color: #ffffff;
+ padding-left: 40px;
+ font-size: 18px;
+ font-family: sans-serif;
+ margin-bottom: 20px;
+}
+
+.form-input::before {
+ content: "\f007";
+ position: absolute;
+ font-family: "fontAwesome";
+ font-size: 35px;
+ padding-left: 5px;
+ padding-top: 5px;
+ color: #cc3399;
+}
+
+.form-input:nth-child(2)::before {
+ content: "\f023";
+}
+
+.btn-login {
+ background-color: #2ecc71;
+ color: #ffffff;
+ font-size: 14px;
+ border: none;
+ border-radius: 4px;
+ padding: 15px 30px;
+ margin-bottom: 10px;
+ cursor: pointer;
+}
+
+a {
+ font-size: 16px;
+ color: #ffffff;
+}
+</style>
+</head>
+
+ <body>
+  <div class="container">
+   <img src="loginmanimg.png">
+   <form>
+    <div class="form-input">
+	 <input type="text" name="username"
+	 placeholder="Enter Username">
+	</div>
+	<div class="form-input">
+	 <input type="password" name="password"
+	 placeholder="Enter Password">
+	</div>
+	<input type="submit" class="btn-login" 
+	value="Login"><br />
+	<a href="#">Forgot Password?</a>
+   </form>
+  </div><!--container-->
+
+
+</body>
+</html>
